@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Heroku App Sample Test Automation Regression Suite">
+
+	<!-- // TODO: still need to configure this to work
+	<listeners> 
+		<listener class-name="ExtentReportListener.ExtentReporterNG" />
+	</listeners> -->
+
+
+	<test thread-count="2" name="Heroku App Sample Test Cases">
+		<classes>
+			<class name="com.HerokuAppTests.LoginPageTest"></class>
+			<class name="com.HerokuAppTests.SecurePageTest"></class>
+			<class name="com.HerokuAppTests.ExitIntentTest"></class>
+			<class name="com.HerokuAppTests.DynamicControlsTest"></class>
+			<class name="com.HerokuAppTests.WindowsTest"></class>
+
+		</classes>
+	</test>
+</suite>
